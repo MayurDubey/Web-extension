@@ -1,1 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Debug It",
+  "version": "1.0",
 
+  "description": "Shows debug button on hover. click opens the image in new window of google.co.in host.",
+  "icons": {
+    "48": "icons/debugit_48x48.png"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.co.in/*"],
+      "js": ["debugit.js"],
+	  "css" : ["debugit.css"]
+    }
+  ]
+}
