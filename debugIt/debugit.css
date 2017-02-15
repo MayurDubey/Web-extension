@@ -1,0 +1,10 @@
+body .bug{
+	width:30px;
+	height:30px;
+	position:fixed;
+	background-image: url("/icons/debugit_48x48.png");
+	background-size:cover;
+    cursor:pointer;
+	display:none;
+	z-index:1001
+}
